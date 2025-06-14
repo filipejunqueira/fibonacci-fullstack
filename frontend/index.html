@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci Calculator</title>
+    <!-- This line imports our stylesheet -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body
+    class="bg-slate-900 text-white flex justify-center items-center h-screen font-sans"
+  >
+    <div
+      class="bg-slate-800 p-8 rounded-lg shadow-2xl w-full max-w-md text-center"
+    >
+      <h1 class="text-3xl font-bold mb-4 text-cyan-400">
+        Fibonacci Calculator
+      </h1>
+      <p class="mb-6 text-slate-400">
+        Enter a number to calculate its Fibonacci value.
+      </p>
+
+      <!-- This is our form. It will handle user input. -->
+      <form id="fib-form" class="flex flex-col gap-4">
+        <input
+          id="number-input"
+          type="number"
+          placeholder="Enter a number (e.g., 42)"
+          class="bg-slate-700 border-2 border-slate-600 rounded-md p-3 text-lg focus:outline-none focus:border-cyan-400"
+          required
+        />
+        <button
+          type="submit"
+          class="bg-cyan-500 hover:bg-cyan-600 font-bold py-3 rounded-md text-lg transition-colors"
+        >
+          Calculate
+        </button>
+      </form>
+
+      <!-- This is where we will display the result from the backend -->
+      <div
+        id="result-container"
+        class="mt-8 p-6 bg-slate-700 rounded-lg min-h-[80px] flex justify-center items-center"
+      >
+        <p id="result-text" class="text-xl text-slate-300">
+          Result will appear here...
+        </p>
+      </div>
+    </div>
+
+    <!-- This line imports our TypeScript logic -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
