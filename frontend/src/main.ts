@@ -12,7 +12,7 @@ const resultContainer = document.getElementById("result-container")!;
 const resultText = document.getElementById("result-text")!;
 
 // The address of our Python backend server.
-const API_URL = "http://localhost:5000/fibonacci";
+const API_URL = "https://fibonacci-fullstack.onrender.com/fibonacci";
 
 // 2. Add an event listener to the form. This function will run when the form is submitted.
 fibForm.addEventListener("submit", async (event) => {
